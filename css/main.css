@@ -13,3 +13,25 @@ a{
 	padding: 0 5%;
 	background: orange;
 }
+
+#logo {
+	text-align: center;
+	margin: 0;
+}
+
+h1, h2{
+	color: #fff;
+}
+
+nav a, nav a;visited {
+	color: #fff;
+}
+
+nav {
+	background: blue;
+}
+
+header {
+	background: red;
+	border-color: white;
+}

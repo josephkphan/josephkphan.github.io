@@ -23,8 +23,17 @@ h1, h2{
 	color: #fff;
 }
 
-nav a, nav a;visited {
+nav a, nav a:visited {
 	color: #fff;
+}
+
+nav a.selected, nav a:hover {
+	color:#32673f;
+}
+
+body {
+	background-colorr: #fff;
+	color: #999;
 }
 
 nav {

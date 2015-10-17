@@ -13,6 +13,9 @@ GENERAL
 body {
 	font-family: 'Open Sans', sans-serif;
 }
+img {
+	max-width: 100%;
+}
 /**********************************
 HEADER
 **********************************/
@@ -48,11 +51,6 @@ h2, h3{
 	
 }
 
-#homephoto{
-	margin:0;
-	padding:0;
-	list-style:none;
-}
 /***********************************
 NAVIGATION
 **********************************/

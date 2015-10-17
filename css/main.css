@@ -7,6 +7,15 @@ a{
 	color: black;
 }
 
+/*****************************
+GENERAL
+*****************************/
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+/*****************************
+HEADER
+*****************************/
 #wrapper {
 	max-width: 940px;
 	margin: 0 auto;
@@ -20,15 +29,28 @@ a{
 }
 h1{
 	text-align: right;
-	font-family: ' ' sans-serif;
+	font-family: 'Orbitron' sans-serif;
 	margin: 15px 0;
 	font-size: 1.75em;
+	color: black;
+	font-weight: normal;
+	line-height: 0.8em;
 }
 
-h1, h2{
+h2, h3{
+	text-align: center;
+	font-family: 'Open Sans' sans-serif;
+	margin: 15px 0;
+	font-size: 3em;
 	color: #fff;
+	font-weight: normal;
+	margin: -5px 0 0;
+	
 }
 
+/*****************************
+NAVIGATION
+*****************************/
 nav a, nav a:visited {
 	color: #fff;
 }
@@ -36,7 +58,23 @@ nav a, nav a:visited {
 nav a.selected, nav a:hover {
 	color:#32673f;
 }
-
+nav {
+	text-align: center;
+	padding: 10px 0;
+	margin 20px 0 0;
+}
+/*****************************
+FOOTER
+*****************************/
+footer {
+	font-size: 0.75em;
+	text-align: center;
+	padding-top: 50px;
+	color: #ccc;
+}
+/*****************************
+COLORS
+*****************************/
 body {
 	background-colorr: #fff;
 	color: #999;
@@ -48,5 +86,5 @@ nav {
 
 header {
 	background: red;
-	border-color: white;
+	border-color: black;
 }

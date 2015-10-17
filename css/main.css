@@ -18,6 +18,12 @@ a{
 	text-align: center;
 	margin: 0;
 }
+h1{
+	text-align: right;
+	font-family: ' ' sans-serif;
+	margin: 15px 0;
+	font-size: 1.75em;
+}
 
 h1, h2{
 	color: #fff;

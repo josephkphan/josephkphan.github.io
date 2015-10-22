@@ -128,7 +128,12 @@ PAGE: HOME
 	font-weight: bold;
 	display: block;
 	text-shadow: 1px 1px 5px black;
-	height = 100%;
+}
+#wrapper {
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 0 5%;
+	background: none;
 }
 #wrapper p {
 	display: block;
@@ -162,11 +167,3 @@ a{
 	text-decoration: none;
 	color: black;
 }
-/*
-#wrapper {
-	max-width: 940px;
-	margin: 0 auto;
-	padding: 0 5%;
-	background: none;
-}
-*/

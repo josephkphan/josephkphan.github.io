@@ -1,4 +1,4 @@
-
+/* Created By Joseph Phan*/
 /**********************************
 GENERAL
 **********************************/
@@ -86,9 +86,8 @@ footer {
 }
 
 /*********************************
-GALlLERY
+PAGE: HOME
 *********************************/
-	
 #gallery {
 	margin: 0;
 	padding: 0;
@@ -99,7 +98,7 @@ GALlLERY
 	float: left;
 	width: 45%;
 	height: 25%;
-	margin 2.5%
+	margin: 2.5%;
 	background-color: #f5f5f5;
 	color: #bdc3c7;
 }
@@ -110,10 +109,6 @@ GALlLERY
 	font-size: .75em;
 	color: #bdc3c7
 }
-
-/*********************************
-PAGE: HOME
-*********************************/
 #header-div {
 	background-image: url("../img/homepage/home.jpg");
 	background-size: cover;

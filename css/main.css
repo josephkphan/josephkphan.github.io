@@ -121,7 +121,7 @@ PAGE: HOME
 	text-align:center;
 	width:100%;
 }
-
+/*
 #header-div h2 {
 	color: black;
 	font-size: 2.5em;
@@ -129,6 +129,7 @@ PAGE: HOME
 	display: block;
 	text-shadow: 1px 1px 5px black;
 }
+*/
 #wrapper {
 	max-width: 940px;
 	margin: 0 auto;

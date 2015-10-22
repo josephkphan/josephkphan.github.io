@@ -1,11 +1,3 @@
-nav {
-	color: white;
-	background-color: orange;
-}
-a{
-	text-decoration: none;
-	color: black;
-}
 
 /**********************************
 GENERAL
@@ -137,6 +129,9 @@ PAGE: HOME
 	background-repeat: no-repeat;
 	background-size: 20px 20px;
 }
+#JPhan {
+	background-color: none;
+}
 /*********************************
 PAGE: ABOUTME
 *********************************/
@@ -155,10 +150,17 @@ body {
 }
 
 nav {
-	background: blue;
+	background: black;
 }
 
 header {
-	background: red;
+	background: none;
 	border-color: black;
 }
+nav {
+	color: white;
+	background-color: orange;
+}
+a{
+	text-decoration: none;
+	color: black;

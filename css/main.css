@@ -2,9 +2,6 @@
 /**********************************
 GENERAL
 **********************************/
-header, #header-div, #home{
-	height: 100%
-}
 body {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -139,7 +136,11 @@ PAGE: HOME
 	background: none;
 }
 #wrapper p {
-	display: block;
+	display: block;	
+	clear: both;
+}
+html, body,header, #header-dov, #home {
+	height: 100%
 }
 /*********************************
 PAGE: ABOUTME

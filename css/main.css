@@ -109,6 +109,9 @@ PAGE: HOME
 	font-size: .75em;
 	color: #bdc3c7
 }
+.home-second-column {
+	clear: left;
+}
 #header-div {
 	background-image: url("../img/homepage/home.jpg");
 	background-size: cover;

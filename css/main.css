@@ -20,10 +20,6 @@ header {
 	width: 100%;
 }
 
-#logo {
-	text-align: center;
-	margin: 0;
-}
 h1{
 	text-align: right;
 	font-family: 'Orbitron' sans-serif;
@@ -33,7 +29,6 @@ h1{
 	font-weight: 800;
 	line-height: 0.8em;
 	padding: 5px 5px 0 0;
-	background-color: black;
 }
 
 h2{
@@ -121,18 +116,19 @@ PAGE: HOME
 #header-div {
 	background-image: url("../img/homepage/home.jpg");
 	background-size: cover;
+	background-repeat:no-repeat;
 	background-position: center;
 	text-align:center;
 	width:100%;
 }
-/*
+
 #header-div h2 {
 	color: black;
 	font-size: 2.5em;
 	font-weight: bold;
 	display: block;
 	text-shadow: 1px 1px 5px black;
-}*/
+}
 /*********************************
 PAGE: ABOUTME
 *********************************/
@@ -166,9 +162,11 @@ a{
 	text-decoration: none;
 	color: black;
 }
+/*
 #wrapper {
 	max-width: 940px;
 	margin: 0 auto;
 	padding: 0 5%;
 	background: none;
 }
+*/

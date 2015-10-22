@@ -129,6 +129,9 @@ PAGE: HOME
 	display: block;
 	text-shadow: 1px 1px 5px black;
 }
+#wrapper p {
+	display: block;
+}
 /*********************************
 PAGE: ABOUTME
 *********************************/

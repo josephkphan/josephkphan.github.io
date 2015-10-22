@@ -13,12 +13,6 @@ h3 {
 /**********************************
 HEADER
 **********************************/
-#wrapper {
-	max-width: 940px;
-	margin: 0 auto;
-	padding: 0 5%;
-	background: orange;
-}
 header {
 	float: left;
 	margin 0 0 30px 0;
@@ -47,7 +41,7 @@ h2{
 	font-family: 'Open Sans' sans-serif;
 	margin: 15px 0;
 	font-size: 3em;
-	color: #fff;
+	color: black;
 	font-weight: normal;
 	margin: -5px 0 0;
 	
@@ -163,3 +157,10 @@ nav {
 a{
 	text-decoration: none;
 	color: black;
+}
+#wrapper {
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 0 5%;
+	background: none;
+}

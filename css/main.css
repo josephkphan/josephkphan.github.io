@@ -139,9 +139,11 @@ PAGE: HOME
 	display: block;	
 	clear: both;
 }
+/*
 html, body,header, #header-dov, #home {
 	height: 100%
 }
+*/
 /*********************************
 PAGE: ABOUTME
 *********************************/

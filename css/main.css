@@ -127,6 +127,16 @@ GALlLERY
 	font-size: .75em;
 	color: #bdc3c7
 }
+
+/*********************************
+PAGE: HOME
+*********************************/
+.homepage h2{
+	background-image url('../img/homepage/home.jpg');
+	display: block;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+}
 /*********************************
 PAGE: ABOUTME
 *********************************/

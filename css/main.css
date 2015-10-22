@@ -127,6 +127,7 @@ PAGE: HOME
 	font-weight: bold;
 	display: block;
 	text-shadow: 1px 1px 5px black;
+	height: 100%;
 }
 
 #wrapper {

@@ -124,24 +124,12 @@ GALlLERY
 /*********************************
 PAGE: HOME
 *********************************/
-.homepage h2{
-	background-image url('../img/homepage/home.jpg');
-	display: block;
-	background-repeat: no-repeat;
-	background-size: 20px 20px;
-}
-#JPhan {
-	background-color: none;
-}
-.homepage-image {
-	position: relative;
-	width: 100%;
-}
-.homepage-image h2 {
-	position: absolute;
-	top: 200px;
-	left: 0;
-	width: 100%;
+#header-div {
+	background-image: url("../img/home/homepage/home.jpg");
+	background-size: cover;
+	background-position: center;
+	text-align:center;
+	width:100%;
 }
 /*********************************
 PAGE: ABOUTME

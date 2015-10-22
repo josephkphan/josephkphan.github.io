@@ -133,6 +133,16 @@ PAGE: HOME
 #JPhan {
 	background-color: none;
 }
+.homepage-image {
+	position: relative;
+	width: 100%;
+}
+.homepage-image h2 {
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 100%;
+}
 /*********************************
 PAGE: ABOUTME
 *********************************/
@@ -146,7 +156,7 @@ PAGE: ABOUTME
 COLORS
 *********************************/
 body {
-	background-colorr: #fff;
+	background-color: #fff;
 	color: #999;
 }
 
@@ -160,7 +170,7 @@ header {
 }
 nav {
 	color: white;
-	background-color: orange;
+	background-color: black;
 }
 a{
 	text-decoration: none;

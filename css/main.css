@@ -103,12 +103,15 @@ PAGE: HOME
 	color: #bdc3c7;
 	max-height: 500px;
 }
+#gallery img {
+	box-shadow: 10px 10px 5px #888888;
+}
 
 #gallery li a p{
 	margin: 0;
 	padding: 5%;
 	font-size: .75em;
-	color: #bdc3c7
+	color: #333333;
 }
 .home-first-column {
 	clear: left;
@@ -140,19 +143,15 @@ PAGE: HOME
 	display: block;	
 	clear: both;
 }
-/*
-html, body,header, #header-dov, #home {
-	height: 100%
-}
-*/
 /*********************************
 PAGE: ABOUTME
 *********************************/
 .profile-photo {
 	display: block;
-	max-width: 150px;
+	max-width: 250px;
 	margin: 0 auto 30px;
 	border-radius: 100%;
+	box-shadow: 5px 5px 5px #888888;
 }
 /*********************************
 COLORS

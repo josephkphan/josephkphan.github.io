@@ -9,7 +9,11 @@ img {
 	max-width: 100%;
 }
 h3 {
-	margin: 0 0 1em 0;}
+	margin: 0 0 1em 0;
+}
+.link {
+	color: blue;
+}
 /**********************************
 HEADER
 **********************************/
@@ -152,6 +156,39 @@ PAGE: ABOUTME
 	margin: 0 auto 30px;
 	border-radius: 100%;
 	box-shadow: 5px 5px 5px #888888;
+}
+/*********************************
+PAGE: EDUCATION
+*********************************/
+#Coursework {
+	padding-left: 30px;
+}
+/*********************************
+PAGE: PORTFOLIO
+*********************************/
+#Outside-Projects{
+	padding-left:30px;
+}
+#School-Labs{
+	padding-left:30px;
+}
+#portfolio-artwork li{
+	list-style: none;
+	float: left;
+	width: 48%;
+	height: 25%;
+	margin: 1%;
+	background-color: #f5f5f5;
+	color: #bdc3c7;
+	max-height: 500px;
+	
+}
+/*********************************
+PAGE: RESUME
+*********************************/
+#resume {
+	display: block;
+	margin: 0 auto;
 }
 /*********************************
 COLORS

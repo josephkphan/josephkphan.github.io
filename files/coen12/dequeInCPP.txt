@@ -1,0 +1,168 @@
+/*
+ * File:	deque.c
+ *
+ * Edited by: Joseph Phan, Project6 Lab tues 2:15 - 5
+ *
+ * Copyright:	2015, Darren C. Atkinson
+ *
+ * Description:	This file contains the public and private function and type
+ *		definitions for a deque abstract data type for integers.
+ *		deque is a doubly-ended queue, in which items can only be
+ *		added to or removed from the front or rear of the list.
+ *
+ * 		This implementation uses a circular, doubly-linked list
+ * 		with a sentinel or "dummy" node.  Insertion and deletion
+ * 		from either the front or the rear require constant time.
+ */
+
+# include <cassert>
+# include "deque.h"
+
+/*Function Description: Constructor for the deque
+ * Algorithmic Complexity: O(1)
+ */
+Deque::Deque()
+{
+    count = 0;
+    head = new node;
+    assert(head != NULL);
+
+    head->next = head;
+    head->prev = head;
+}
+
+
+/*Function Description:deallocate memory associated with the deque 
+ * Algorithmic Complexity:O(n)
+ */
+Deque::~Deque()
+{
+    node *np, *next;
+
+    np = head;
+
+    do {
+	next = np->next;
+	delete np;
+	np = next;
+    } while (np != head);
+
+}
+
+
+/*Function Description: add x as the first item in the deque 
+ * Algorithmic Complexity:O(1)
+ */
+void Deque::addFirst(int x)
+{
+    node *np, *sentinel;
+
+    np = new node;
+    assert(np != NULL);
+    np->data = x;
+
+    count ++;
+    sentinel = head;
+
+    np->prev = sentinel;
+    np->next = sentinel->next;
+
+    sentinel->next->prev = np;
+    sentinel->next = np;
+}
+
+
+/*Function  Description: add x as the last item in the deque 
+ * Algorithmic Complexity:O(1)
+ */
+void Deque::addLast(int x)
+{
+    node *np, *sentinel;
+
+    np = new node;
+    assert(np != NULL);
+    np->data = x;
+
+    sentinel = head;
+    count ++;
+
+    np->prev = sentinel->prev;
+    np->next = sentinel;
+
+    sentinel->prev->next = np;
+    sentinel->prev = np;
+}
+
+
+/*Function Description:remove and return the first item in the deque. the deque must not be empty
+ * Algorithmic Complexity:O(1)
+ */
+int Deque::removeFirst()
+{
+    int x;
+    node *np, *sentinel;
+
+    assert(count > 0);
+    sentinel = head;
+    count --;
+
+    np = sentinel->next;
+    sentinel->next = np->next;
+    np->next->prev = sentinel;
+
+    x = np->data;
+    delete np;
+    return x;
+}
+
+
+/*Function Description: remove and return the last item in the deque. the deque must not be empty
+ * Algorithmic Complexity:O(1)
+ */
+int Deque::removeLast()
+{
+    int x;
+    node *np, *sentinel;
+
+
+    assert(count > 0);
+    sentinel = head;
+    count --;
+
+    np = sentinel->prev;
+    sentinel->prev = np->prev;
+    np->prev->next = sentinel;
+
+    x = np->data;
+    delete np;
+    return x;
+}
+
+
+/*Function Description: returns, but does not remove, the first item in the deque. the deque must not be empty
+ * Algorithmic Complexity:O(1)
+ */
+int Deque::getFirst()
+{
+    assert(count > 0);
+    return head->next->data;
+}
+
+
+/*Function Description: returns, but does not remove, the last item in the deque . the deque must not be empty.
+ * Algorithmic Complexity:O(1)
+ */
+int Deque::getLast()
+{
+    assert(count > 0);
+    return head->prev->data;
+}
+
+
+/*Function Description:return the number of items in the deque
+ * Algorithmic Complexity:O(1)
+ */
+int Deque::size()
+{
+    return count;
+}

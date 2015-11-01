@@ -1,0 +1,130 @@
+// Made by Joey Phan/ Lab Hotel Room  lab 8 / 11/13/14  / Thursday 2:15-5 / Figuerira
+
+#include <string.h>
+#include <stdio.h>
+
+/* 
+In this application we will create a reservation system for a hotel with 10 rooms. The user will be able to reserve a room, cancl a reservation, list all the reservations, and quit.
+*/
+
+    char reservationName [10] [20]; // this is the rooms people will reserve and cancel and input their names
+    int roomCounter; // this will keep count of how many rooms are reserved
+    int quit = 0; // this will be used for the forever loop 
+    int i;
+
+    void reservation (void);
+    void cancellation (void);
+    void list (void);
+    void actionQuit (void) ;
+
+//reservationInterface is the screen that the user will interact with. it will display how many open rooms there are and ask what the user wants to do.
+void reservationInterface (void) {
+    int action;
+    while (quit == 0) {
+        roomCounter=0;
+        for (i=0; i<10; i++) {
+            if (reservationName[i][0]=='\0') {
+                roomCounter++;
+            }
+        }
+        printf("\n there are currently %d rooms available\n", roomCounter);
+        printf ("What would you like to do? \n    -Make a reservation (type 0). \n    -Cancel a reservation (type 1). \n    -List all the rooms (type 2). \n    -Quit (type 3). \n " );
+        scanf ("%d", &action);
+	switch (action) {
+	    case 0:
+		reservation();
+	        break;
+
+	    case 1:
+		cancellation();
+	        break;
+
+	    case 2:
+		list();
+	        break;
+
+	    case 3:
+		actionQuit();
+	        break;
+
+	    default:
+		printf ("sorry you have entered an incorrect number. \n");
+	}
+    }
+}
+// reservation allows the user to reserve a room if there is an open one asking for the person's name. It will check whether the name is taken or not and not allow repeated names.
+void reservation (void) {
+    int j;
+    int flag=0;
+    char sameNameCheck [20];
+    if (roomCounter > 0 && roomCounter <= 10){
+        for(i=0;i<10; i++){
+            if(reservationName[i][0]=='\0') {
+                printf ("Please enter your name. \n");
+                scanf ("%s", sameNameCheck);
+		for(j=0; j<10; j++) {
+		    if (strcmp (sameNameCheck, reservationName[j])==0) {
+			flag = 1;
+			printf("Somebody has used that name, please use another.\n");
+			i=10;
+		        break;
+	     	    }
+		}
+		if (flag==0) {
+		    strcpy(reservationName[i],sameNameCheck) ;
+                    printf ("You have just reserved a room under the name %s.\n", reservationName[i]);
+		    i=10;
+		}
+	    }
+        } 
+    }else { 
+	printf("Sorry there are currently no available rooms.\n");
+    }
+}
+//cancellation allows the user to cancel a reservation if there is at least one room that is not available and the user inputs the correct name when asked.
+void cancellation (void) {
+    char idcheck [20];
+    if (roomCounter<10){
+    printf ("Please enter your name.\n");
+    scanf ("%s", idcheck);
+    for (i=0;i<10;i++)
+        if (strcmp(idcheck,reservationName[i])==0) {
+            reservationName[i][0]='\0';
+            printf ("Your cancellation has been completed.\n");
+            break;
+        }   
+        if(i==10) {
+            printf ("You have inserted an invalid name.\n");
+        }
+    } else {
+	printf("The hotel is empty.\n");
+    }
+}
+//list prints out all the rooms and their availability. If it is not available, it will print out the name under which it is reserved.
+void list (void) {
+    int roomNumber;
+        for(i=0; i<10; i++){
+            roomNumber = i + 1;
+            if (reservationName[i][0]=='\0') {
+                printf ("Room %d -  available \n",roomNumber );
+            }else {
+                printf ("Room %d -  NOT available - reserved by %s. \n", roomNumber,reservationName[i] );
+            }
+	}
+}
+//actionQuit breaks out of the forever loop 
+void actionQuit (void) {
+    printf ("Visit again soon! \n");
+    quit=1;
+}
+
+//in the main, it runs the program and creates the initial rooms all available
+int main(void) {
+    for (i=0; i<10; i++) {
+        reservationName[i][0]='\0';
+    }
+    printf("This hotel has 10 rooms from room#1 to room#10 \n");
+    reservationInterface();
+    return 0;
+}
+

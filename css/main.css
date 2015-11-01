@@ -166,6 +166,9 @@ PAGE: EDUCATION
 /*********************************
 PAGE: PORTFOLIO
 *********************************/
+#portfolio a:hover{
+	color:blue;
+}
 #Outside-Projects{
 	padding-left:30px;
 }

@@ -86,9 +86,11 @@ footer {
 .social-icon {
 	width: 30px;
 	height: 30px;
-	margin: 0.5px;
+	margin: 2.5px;
 }
-
+.footer-text {
+	margin-bottom: 5px;
+}
 /*********************************
 PAGE: HOME
 *********************************/
@@ -157,11 +159,27 @@ PAGE: ABOUTME
 	border-radius: 100%;
 	box-shadow: 5px 5px 5px #888888;
 }
+#aboutme h4
 /*********************************
 PAGE: EDUCATION
 *********************************/
 #Coursework {
 	padding-left: 30px;
+}
+#skills li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 30px;
+}
+/*********************************
+PAGE: EXPERIENCE
+*********************************/
+#experience li {
+	list-style: none;
+}
+#experience p {
+	padding-left: 30px;
+	margin-top:0;
 }
 /*********************************
 PAGE: PORTFOLIO
@@ -169,12 +187,14 @@ PAGE: PORTFOLIO
 #portfolio a:hover{
 	color:blue;
 }
-#Outside-Projects{
+#Outside-Projects, #School-Labs, #arduino {
 	padding-left:30px;
 }
-#School-Labs{
-	padding-left:30px;
+/*
+#Intro-To-Programming, #Advanced-Programming{
+	display:inline-block;
 }
+*/
 #portfolio-artwork li{
 	list-style: none;
 	float: left;
@@ -184,7 +204,9 @@ PAGE: PORTFOLIO
 	background-color: #f5f5f5;
 	color: #bdc3c7;
 	max-height: 500px;
-	
+}
+#portfolio-artwork img{
+	box-shadow: 5px 5px 5px #888888;
 }
 /*********************************
 PAGE: RESUME

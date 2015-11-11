@@ -119,6 +119,13 @@ PAGE: HOME
 	font-size: .75em;
 	color: #333333;
 }
+#gallery img:hover {
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
 .home-first-column {
 	clear: left;
 }

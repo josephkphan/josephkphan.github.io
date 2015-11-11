@@ -122,6 +122,11 @@ PAGE: HOME
 .home-first-column {
 	clear: left;
 }
+#quick-look {
+	position: center;
+	margin-left:250px;
+	vertical-align:middle;
+}
 #header-div {
 	background-image: url("../img/homepage/home.jpg");
 	background-size: cover;
@@ -137,6 +142,11 @@ PAGE: HOME
 	font-weight: bold;
 	display: block;
 	text-shadow: 1px 1px 5px black;
+}
+
+#quick-look-link {
+	text-align:center;
+	margin-bottom:none;
 }
 
 #wrapper {
@@ -171,9 +181,11 @@ PAGE: EDUCATION
 	display: inline-block;
 	margin-right: 30px;
 }
+/*
 #santa-clara{	
 	width:100%;
 }
+
 #emblem-background{
 	background-image: url("../img/education/santa-clara-emblem.png");
 	background-repeat: no-repeat;
@@ -181,6 +193,7 @@ PAGE: EDUCATION
 	width:100%;
 	height: 150px;
 }
+
 #scu-emblem{
 	float:right;
 	word-wrap: break-word;
@@ -198,6 +211,7 @@ PAGE: EDUCATION
 	float:left;	
 	margin: 10px;
 }
+*/
 /*********************************
 PAGE: EXPERIENCE
 *********************************/

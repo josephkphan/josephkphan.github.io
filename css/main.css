@@ -171,6 +171,33 @@ PAGE: EDUCATION
 	display: inline-block;
 	margin-right: 30px;
 }
+#santa-clara{	
+	width:100%;
+}
+#emblem-background{
+	background-image: url("../img/education/santa-clara-emblem.png");
+	background-repeat: no-repeat;
+	background-position:right;
+	width:100%;
+	height: 150px;
+}
+#scu-emblem{
+	float:right;
+	word-wrap: break-word;
+	width:150px;
+	height:150px;
+	display: inline;
+	position:relative
+}
+.TextWrap{
+	float: right;
+	margin-right:10px;
+	margin-top:-50px;
+}
+.TextWrapLeft{
+	float:left;	
+	margin: 10px;
+}
 /*********************************
 PAGE: EXPERIENCE
 *********************************/

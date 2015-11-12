@@ -11,6 +11,9 @@ img {
 h3 {
 	margin: 0 0 1em 0;
 }
+a, a:link, a:active, a:visited{
+	text-decoration: none;
+}
 .link {
 	color: blue;
 }
@@ -49,6 +52,34 @@ h3 {
 	padding-top:50px;
 }
 
+/**********************************
+NAV
+**********************************/
+#nav-bar h3{
+	color:gray;
+}
+#nav-bar li{
+	border: 2px solid transparent;
+	padding: 2px;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:100%;
+}
+#nav-bar li:hover{
+	border: 2px solid gray;
+	padding: 2px;
+	padding-left:10px;
+	padding-right:10px;
+}
+#nav-bar li:active {
+	border: 2px solid gray;
+	padding: 2px;
+	padding-left:10px;
+	padding-right:10px;
+}
+#nav-bar{
+	position: fixed; top: 25; left:2%;
+}
 
 /**********************************
 WRAPPER
@@ -83,7 +114,7 @@ h1{
 	font-weight: 800;
 	line-height: 0.8em;
 	padding: 5px 5px 0 0;
-	position:fixed; top:25; right:2%; 
+	position:fixed; top:2%; right:2%; 
 }
 
 h2{
@@ -122,14 +153,6 @@ body {
 	color: #999;
 }
 
-nav {
-	background: black;
-}
-
-nav {
-	color: white;
-	background-color: black;
-}
 a{
 	text-decoration: none;
 	color: black;

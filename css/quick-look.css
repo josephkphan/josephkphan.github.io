@@ -2,14 +2,14 @@
 /**********************************
 GENERAL
 **********************************/
-body {
-	font-family: 'Open Sans', sans-serif;
-}
-img {
-	max-width: 100%;
-}
-h3 {
-	margin: 0 0 1em 0;
+body {	font-family: 'Open Sans', sans-serif;}
+img {max-width: 100%;}
+h2{font-size:5vh;}
+h3{font-size:3vh;}
+h4{font-size:2.5vh;}
+p{
+	font-size:2vh;
+	color:black;
 }
 a, a:link, a:active, a:visited{
 	text-decoration: none;
@@ -49,7 +49,71 @@ a, a:link, a:active, a:visited{
 }
 #main-menu h2{
 	clear:both;
-	padding-top:50px;
+	padding-top:15px;
+}
+
+/**********************************
+ABOUT
+**********************************/
+#page-about-me h3{
+	line-height: 7vw;
+	color:black;
+}
+/**********************************
+EXPERIENCE
+**********************************/
+#page-my-experience img{
+	max-height:16vw;
+	max-width:16vw;
+}
+#page-my-experience li{
+	float: left;
+	width: 25%;
+	height: 25%;
+	margin: 2.5%;
+	max-height: 500px;
+}
+#page-my-experience p {
+	color:black;
+	text-align:left;
+	margin-left:2.5%;
+	font-size:2vh;
+}
+/*
+#exp-p1{
+	position:absolute;
+	top: 225%;
+	left:30%;	
+}
+#exp-p2{
+	position:absolute;
+	top: 250%;
+	left:30%
+}
+*/
+
+/**********************************
+CONTACT
+**********************************/
+#page-contact-me img{
+	max-height:16vw;
+	max-width:16vw;
+}
+#page-contact-me li{
+	float: left;
+	width: 25%;
+	height: 25%;
+	margin: 2.5%;
+	max-height: 500px;
+}
+#page-contact-me li p{
+	text-align:center;
+}
+#page-contact-me p {
+	color:black;
+	text-align:center;
+	margin-left:2.5%;
+	font-size:2vh;
 }
 
 /**********************************

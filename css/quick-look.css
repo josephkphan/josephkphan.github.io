@@ -58,6 +58,8 @@ ABOUT
 #page-about-me h3{
 	line-height: 7vw;
 	color:black;
+	margin-left:25px;
+	margin-right:25px;
 }
 /**********************************
 EXPERIENCE

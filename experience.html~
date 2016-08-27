@@ -55,9 +55,9 @@
 			</section>
 			<footer>
 				<p class ="footer-text">check me out at...</p>
-				<a href="https://www.linkedin.com/in/josephkphan"><img src = "img/icons/linkedin.png" class = "social-icon"></a>
+				<a href="https://www.linkedin.com/in/josephphan1"><img src = "img/icons/linkedin.png" class = "social-icon"></a>
 				<a href= "https://www.facebook.com/joey.phan.31"><img src = "img/icons/facebook.png" class = "social-icon"></a>
-				<a href= "https://github.com/josephkphan"><img src = "img/icons/github.png" class = "social-icon"></a>
+				<a href= "https://github.com/roophanxp"><img src = "img/icons/github.png" class = "social-icon"></a>
 				<p>&copy; 2015 Joseph Phan.</p> 
 			</footer>
 		</div>

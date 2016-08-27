@@ -20,22 +20,25 @@
 					<li><a href="education.html">Education</a></li>
 					<li><a href="experience.html">Experience</a></li>
 					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="resume.html" class="selected">Resume</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="contact.html" class="selected">Contact</a></li>
 				 </ul>
 			</nav>
 		</header>
 		<div id="wrapper":>
 			<section>
-				<h3>My Resume</h3>
-				<p><a href="files/JosephPhansResume.pdf" class="link" download>Download here</a></p>
-				<img src="img/resume/JosephResume.png" id="resume">
+				<h3>Contact Details</h3>
+				<ul class = "contct-info">
+					<li class="phone"><a href= "tel:(408)646-3931">Cell Phone: (408) 646-3931</a><br></li>
+					<li class="mail"><a href="mailto:jphan@scu.edu">Email: jphan@scu.edu</a><br></li>
+					<li class="facebook"><a href="http://facebook.com/joey.phan.31">My Facebook Page</a><br></li>
+				</ul>
 			</section>
 			<footer>
 				<p class="footer-text">check me out at...</p>
-				<a href="https://www.linkedin.com/in/josephkphan"><img src="img/icons/linkedin.png" class = "social-icon"></a>
-				<a href="https://www.facebook.com/joey.phan.31"><img src="img/icons/facebook.png" class = "social-icon"></a>
-				<a href="https://github.com/josephkphan"><img src="img/icons/github.png" class = "social-icon"></a>
+				<a href="https://www.linkedin.com/in/josephphan1"><img src="img/icons/linkedin.png" class="social-icon"></a>
+				<a href="https://www.facebook.com/joey.phan.31"><img src="img/icons/facebook.png" class="social-icon"></a>
+				<a href="https://github.com/roophanxp"><img src = "img/icons/github.png" class="social-icon"></a>
 				<p>&copy; 2015 Joseph Phan.</p> 
 			</footer>
 		</div>

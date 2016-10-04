@@ -30,34 +30,33 @@
 				<h3>My Experiences</h3>
 				<img src="img/experience/background.jpg">			
 				<div id="experience">	
-					<h4>Programming Experience</h4>
-					<ul>
-						<li>Research Assistant</li>
-						<p>Performs research and programming in data mining searching for the most efficient way working under Professor Haibing Lu at Santa Clara University. <p>
-						<li>JNV Games</li>
-						<p>Cofounder, Programmer, Game Designer, Graphics Artist at JNV Games</p>
-					</ul>	
+
 					<h4>Work Experience</h4>
-					<ul>
+						<li>Research Assistant</li>
+							<p>  Developed programs to effectively process large sets of data and discover patterns and trends in Java <p>
+					<li>Teaching Assistant</li>
+							<p>  Provide guidance to students to develop and implement well structured programs for business applications<p>
 						<li>Sales Associate at Calvin Klein</li>
 						<p>Shares in overall responsibility for generating maximum sales potential through upholding high customer service standards, maintaining store appearance, keeping merchandise filled tp the appropiate levels on the sales floor.</p>
-						<li>Mathmatics Tutor</li>
-						<p>Tutors and help students of any ages in topics from Algebra to Calculus BC</p>
+						
 					</ul>
 					<h4>Volunteer Work</h4>
 					<ul>
-						<li>English Tutor at Read, Write, Discover</li>
-						<p>Summer Program at Milpitas Library that help kids catch up or go ahead in their English classes</p>
 						<li>STEM Instructor at Kennedy Elementary</li>
-						<p>Primarily deal with 5th graders, introducing different topics from engineering</p>
+						<p>Led an after school program for underprivileged kids and introduced them to topics of engineering
+</p>
+						<li>Mathmatics Tutor</li>
+						<p>Tutored middle and highschool students in Algebra and Calculus</p>
+						<li>English Tutor at Read, Write, Discover</li>
+						<p>Tutored elementary school kids to help progress their reading adn writing levels</p>
 					</ul>
 				</div>		
 			</section>
 			<footer>
 				<p class ="footer-text">check me out at...</p>
-				<a href="https://www.linkedin.com/in/josephphan1"><img src = "img/icons/linkedin.png" class = "social-icon"></a>
+				<a href="https://www.linkedin.com/in/josephkphan"><img src = "img/icons/linkedin.png" class = "social-icon"></a>
 				<a href= "https://www.facebook.com/joey.phan.31"><img src = "img/icons/facebook.png" class = "social-icon"></a>
-				<a href= "https://github.com/roophanxp"><img src = "img/icons/github.png" class = "social-icon"></a>
+				<a href= "https://github.com/josephkphan"><img src = "img/icons/github.png" class = "social-icon"></a>
 				<p>&copy; 2015 Joseph Phan.</p> 
 			</footer>
 		</div>

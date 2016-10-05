@@ -1,132 +1,80 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset = "utf-8"></meta>
-		<link rel="image_src" href="http://roophanxp.github.io/home/img/Joey.JPG"> 
-		<link rel="stylesheet" href= "css/animate.css">
-		<link rel="stylesheet" href= "css/normalize.css">
-		<link rel="stylesheet" href= "css/quick-look.css">
+		<meta charset="utf-8">
+		<link rel="image_src" href="http://josephkphan.github.io/home/img/Joey.JPG"> 
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
 		<link href='https://fonts.googleapis.com/css?family=Orbitron:400,900|Open+Sans:400,600,800,400italic,600italic' rel='stylesheet'>
-		<script src="js/jquery.js"></script>
-		<script src="js/script.js"></script>
-		<title> Joseph Phan | Programmer </title>
+		<link rel="stylesheet" href="css/animate.css">
+		<title>Joseph Phan | Programmer</title>
 	</head>
 	<body>
-	<div id="nav-bar" class="container text-center">
-			<ul class="animated fadeIn delay-100">
-				<li id="nav_link0" class="link0"><a href="javascript:void(0)">
-					<h3>Back to Top</h3></a>
-				</li>
+		<header>
+			<h1 class="animated fadeInDown delay-100">JPhan</h1>
+			<div id = "header-div">
+				<h2 class="animated fadeInDown delay-600" >Need a cup of Joe?<br><br><br><br><br><br></h2>
+			</div>
+			<nav class="animated fadeInDown delay-200">
+				<ul>
+					<li><a href="index.html" class="selected">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="education.html">Education</a></li>
+					<li><a href="experience.html">Experience</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				 </ul>
+			</nav>
+		</header>
+		<div id="wrapper">
+			<section class="animated fadeIn delay-400">
+				<ul id = "gallery">
+					<li class = "home-first-column">
+						<a href="about.html">
+							<img src="img/homepage/aboutme.jpg" alt="">
+							<p>About Me</p>
+						</a>
+					</li>
+					<li class="home-second-column">
+						<a href="education.html">
+							<img src="img/homepage/education.jpg" alt="">
+							<p>Education</p>
+						</a>
+					</li>
+					<li class="home-first-column">
+						<a href="experience.html">
+							<img src="img/homepage/workexperience.jpg" alt="">
+							<p>Work Experience</p>
+						</a>
+					</li>
+					<li class="home-second-column">
+						<a href="portfolio.html">
+							<img src="img/homepage/profolio.jpg" alt="">
+							<p>Portfolio</p>
+						</a>
+					</li>
+					<li class="home-first-column">
+						<a href="resume.html">
+							<img src="img/homepage/resume.jpg" alt="">
+							<p>Resume</p>
+						</a>
+					</li>
+					<li class = "home-second-column">
+						<a href="contact.html">
+							<img src="img/homepage/contact.jpg" alt="">
+							<p>Contact Me</p>
+						</a>
+				</ul>	
+			</section>
 
-				<li id="nav_link1" class="link1"><a href="javascript:void(0)">
-					<h3>About Me</h3></a>
-				</li>
-
-				<li id="nav_link2" class="link2"><a href="javascript:void(0)">
-					<h3>Experience</h3></a>
-				</li>
-
-				<li id="nav_link3" class="link3"><a href="javascript:void(0)">
-					<h3>Contact</h3></a>
-				</li>
-
-				<li id="nav_link4"><a href="files/JosephPhansResume.pdf" download>
-					<h3>Resume</h3></a>
-				</li>
-
-			</ul>
+			<footer>
+				<p class  = "footer-text">check me out at...</p>
+				<a href="https://www.linkedin.com/in/josephkphan"><img src = "img/icons/linkedin.png" class = "social-icon"></a>
+				<a href= "https://www.facebook.com/joey.phan.31"><img src = "img/icons/facebook.png" class = "social-icon"></a>
+				<a href= "https://github.com/josephkphan"><img src = "img/icons/github.png" class = "social-icon"></a>
+				<p>&copy; 2015 Joseph Phan.</p> 
+			</footer>
 		</div>
-	<!--Main Menu-->
-	<div id="main-menu" class="container text-center full-page-wrap">
-		<h1 class="animated fadeInDown delay-100">JPhan</h1>
-		</br></br></br>
-		<h2 class="animated fadeInDown delay-200">Joseph Phan</h2>			
-
-		<ul class="animated fadeinDown">
-
-			<li><a href="javascript:void(0)">
-				<div id="about" class="animated fadeInDown delay-400">
-					<img src="img/Joey.JPG" class="link1"/></a>
-				<p>About Me</p>
-				</div>
-			</li>
-
-			<li><a href="javascript:void(0)">
-				<div id="experience"class="animated fadeInDown delay-400">
-					<img src="img/quick-load/experience-icon.jpg" class="link2"/></a>
-				<p>Experience</p>
-				</div>
-			</li>
-
-			<li><a href="javascript:void(0)">
-				<div id="contact" class="animated fadeInDown delay-400">
-					<img src="img/quick-load/contact-icon.jpg" class="link3"/></a>
-				<p>Contact</p>
-				</div>
-			</li>
-		</ul>
-		<h2 class="animated fadeIn delay-600">"Plan in decades. Think in years. Work in months. Live in days."</h2>
-	</div>	
-
-	<!--About Me-->	
-	<div id="page-about-me" class="container text-center full-page-wrap">
-		<h2></br>About Me</h2>
-		</br></br>
-		<h3>Hi, my name is Joseph, and I am a junior at Santa Clara University majoring in Computer Engineering. </h3>	
-	</div>
-
-	<!--My Experience-->
-	<div id="page-my-experience" class="container text-center full-page-wrap">
-		<h2></br>My Experience</h2>
-		<ul>
-			<li>	
-				<img src="img/quick-load/experience-data-mining.jpg"/>
-				<p id="exp-p1">Research Assistant: Developed programs to effectively process large sets of data and discover patterns and trends </p>
-			</li>
-			<li>
-				<img src="img/quick-load/experience-JNV.jpg"/>
-				<p id="exp-p2">Network Engineer, Programmer, and Technical artist: Developed a multiplayer game and a physics game on iOS and Android</p>
-			</li>
-			<li>
-				<img src="img/quick-load/experience-STEM.png"/>
-				<p>Teaching Assistant: Provide guidance to students to develop and implement well structured programs for business applications</p>
-			</li>
-		</ul>
-			<p class="clear">Fluent in C, C++, Java, CSS, HTML</p>
-			<p class="clear">Have worked with Arduino, Android Studio, EMBitz</p>
-			<p class="clear">Can use PowerPoint, Excel, Git, Microsoft Office</p>
-			<p class="clear">To check out all the work I've done, go to my portfolio page on my full website</p>
-
-	</div>
-
-	<!--Contact Me-->
-	<div id="page-contact-me" class="container text-center full-page-wrap">
-		<h2></br>Interested Yet?</h2>
-		<p class="text-left">To download my resume click <a href="files/JosephPhansResume.pdf" class="link" download>Here</a></p>
-		<p class="text-left"> Find me at..
-		<ul>
-			<li>
-				<a target="_blank" href="https://www.facebook.com/joey.phan.31">
-				<img src="img/quick-load/contact-facebook.jpg">
-				</a>
-				<p>Facebook</p>
-			</li>
-			<li>
-				<a target="_blank" href="https://github.com/josephkphan">
-				<img src="img/quick-load/contact-github.jpg">
-				</a>
-				<p>Github</p>
-			</li>
-			<li>
-				<a target="_blank" href="https://www.linkedin.com/in/josephkphan">
-				<img src="img/quick-load/contact-linkedin.jpg">
-				</a>
-				<p>Linkedin</p>
-			</li>
-		</ul>
-		<p class="clear">Email: jphan@scu.edu</p>
-		<p class="clear">Phone Number: (408)646-3931 </p>
-		<p class="clear"> Find out more at my full website by clicking <a href="home.html" class="link">Here</a></p>
-	</div>	
 	</body>
 </html>
